@@ -14,6 +14,6 @@ PREVIEW_PASSWORD=<the password> node build.mjs
 
 That rewrites `index.html` here. Commit and push it. The password is not written down in either repository.
 
-## One-time setup
+## Where it is
 
-GitHub Pages has to be switched on by hand once, because the workflow's own token is not allowed to create the site: in this repository's Settings, under Pages, set "Build and deployment: Source" to "GitHub Actions". After that the site is at https://stuartridout.github.io/statepreview/.
+https://stateofyour.ai, by the CNAME file; https://stuartridout.github.io/statepreview/ redirects there. Pages was switched on by hand on 2 Oct 2026 (Settings, Pages, Source: GitHub Actions), because a workflow's own token is not allowed to create the site; the first two runs failed at that step. If the custom domain ever shows a certificate warning, "Enforce HTTPS" in the same settings page is the switch, available once GitHub has issued the certificate.
